@@ -33,6 +33,7 @@ public class InvoiceServiceImpl {
 		List<InvoiceDTO> invoiceDTOList = new ArrayList<>();
 		for(Invoice invoice: invoiceList) {
 			InvoiceDTO invoieDto = new InvoiceDTO();
+
 			invoieDto.setInvoiceNumber(invoice.getInvoice_id());
 			invoieDto.setAmountDue(invoice.getAmount());
 			invoieDto.setCustomerName(invoice.getCustomer_name());
